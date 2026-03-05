@@ -1,0 +1,54 @@
+/* ── global ── */
+[data-testid="stAppViewContainer"] {
+    background-color: #0a0f0d;
+    color: #e8f0ea;
+}
+[data-testid="stSidebar"] {
+    background-color: #111a14;
+    border-right: 1px solid #1f3025;
+}
+[data-testid="stHeader"] {
+    background-color: #0a0f0d;
+}
+
+/* ── headings ── */
+h1, h2, h3, h4 {
+    color: #3ddc84 !important;
+    font-family: 'Courier New', monospace;
+}
+p, li, span, label {
+    color: #c8deca !important;
+}
+
+/* ── metrics ── */
+[data-testid="metric-container"] {
+    background-color: #111a14;
+    border: 1px solid #1f3025;
+    border-radius: 10px;
+    padding: 12px 16px;
+}
+[data-testid="metric-container"] label {
+    color: #6b8a72 !important;
+    font-size: 11px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+[data-testid="metric-container"] [data-testid="stMetricValue"] {
+    color: #3ddc84 !important;
+    font-family: 'Courier New', monospace;
+    font-size: 22px !important;
+}
+
+/* ── columns ── */
+[data-testid="column"] {
+    background-color: #111a14;
+    border: 1px solid #1f3025;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 4px;
+}
+
+/* ── divider ── */
+hr {
+    border-color: #1f3025;
+}
