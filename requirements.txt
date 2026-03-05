@@ -1,0 +1,9 @@
+streamlit
+streamlit-navigation-bar
+pandas
+matplotlib
+seaborn
+unidecode
+numpy
+plotly
+lxml
