@@ -7,6 +7,13 @@ from datetime import date
 
 DB = "agri_monitor.db"
 
+database.create_table()
+database.insert_data()
+
+css_file = Path(__file__).parent / "styles" / "template1_style.css"
+with open(css_file) as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
 def get_conn():
     conn = sqlite3.connect(DB, check_same_thread=False)
     conn.row_factory = sqlite3.Row
