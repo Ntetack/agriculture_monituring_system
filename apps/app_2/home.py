@@ -8,7 +8,7 @@ import database
 DB = "agri_monitor.db"
 
 database.create_table()
-database.insert_data()
+#database.insert_data()
 
 # load css
 css_file = Path(__file__).parent / "styles" / "template1_style.css"
