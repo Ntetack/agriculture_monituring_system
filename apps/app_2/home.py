@@ -8,7 +8,23 @@ import database
 DB = "agri_monitor.db"
 
 database.create_table()
-database.insert_data()
+def is_db_empty():
+    conn = sqlite3.connect(DB)
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT COUNT(*) FROM Farms")
+    count = cursor.fetchone()[0]
+
+    conn.close()
+    return count == 0
+
+
+if is_db_empty():
+    database.insert_data()
+
+
+
+
 
 # load css
 css_file = Path(__file__).parent / "styles" / "template1_style.css"
